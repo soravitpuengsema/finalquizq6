@@ -9,7 +9,7 @@ public class test {
 		String[] listpath = path.split("/");
         	String lastpath = listpath[listpath.length-1];
         	System.out.println(lastpath);
-		findPath(path,0);	
+		findPath(path,1);	
 	}
 	public static void findPath(String path, int count){
 		String[] listpath = path.split("/");
@@ -19,7 +19,7 @@ public class test {
 		
 		for ( int i = 0 ; i < files.length ; i++ ){
 			if ( count > 0 ) {
-			      for ( int j = -1 ; j < count ; j++){
+			      for ( int j = 1 ; j < count ; j++){
 				System.out.print("      ");                       
 			      }
 			    }
